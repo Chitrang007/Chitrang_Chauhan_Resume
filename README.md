@@ -1,4 +1,4 @@
-# Professional Portfolio & Resume – Emerald Slate Edition
+# Professional Portfolio & Resume – Chitrang Chauhan Resume
 
 A high-performance, responsive, and print-optimized professional resume built with **HTML5**, **Tailwind CSS**, and **Custom CSS3**. This project features a modern "Dark Mode" aesthetic, optimized for both screen viewing and high-quality PDF export.
 
