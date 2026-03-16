@@ -40,11 +40,11 @@ Ensure **Background Graphics** is turned ON in the print settings if you want th
 
 ## 🚀 Installation & Local Development
 No build steps are required. Simply clone and open:
-# Clone the repository
+Clone the repository
 git clone <github_repo>
 
-# Open in your browser
-# (Or use VS Code "Live Server" for instant updates)
+Open in your browser
+(Or use VS Code "Live Server" for instant updates)
 
 ---
 
