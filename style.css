@@ -1,0 +1,136 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #020617;
+    color: #f1f5f9;
+}
+
+.resume-container {
+    background-color: #0f172a;
+    border-top: 8px solid #10b981;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+h1 {
+    color: #f8fafc;
+}
+
+h2.section-title {
+    color: #10b981;
+    border-bottom: 2px solid #1e293b;
+}
+
+h3 {
+    color: #f1f5f9;
+}
+
+.text-pro-green {
+    color: #10b981;
+}
+
+.bg-pro-green-dim {
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.text-blue-900, 
+.text-blue-700, 
+.text-blue-600 {
+    color: #60a5fa;
+}
+
+.text-blue-400, 
+.text-blue-300 {
+    color: #93c5fd;
+}
+
+.text-slate-900, 
+.text-slate-800, 
+.text-slate-100 {
+    color: #f8fafc;
+}
+
+.text-slate-700, 
+.text-slate-600 {
+    color: #cbd5e1;
+}
+
+.text-slate-500, 
+.text-slate-400 {
+    color: #94a3b8;
+}
+
+.bg-slate-800 {
+    background-color: #1e293b;
+}
+
+.border-slate-700 {
+    border-color: #334155;
+}
+
+.list-disc li::marker {
+    color: #10b981;
+}
+
+button {
+    background-color: #059669;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #10b981;
+    transform: translateY(-1px);
+}
+
+a {
+    transition: color 0.2s;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    body {
+        background-color: white;
+        color: black;
+    }
+    .resume-container {
+        background-color: white;
+        box-shadow: none;
+        margin: 0;
+        border: none;
+    }
+    h2.section-title {
+        color: #047857;
+        border-bottom: 2px solid #e2e8f0;
+    }
+    .text-pro-green {
+        color: #047857;
+    }
+    .text-blue-900, 
+    .text-blue-700, 
+    .text-blue-600, 
+    .text-blue-400 {
+        color: #1e40af;
+    }
+    .text-slate-600, 
+    .text-slate-700 {
+        color: #334155;
+    }
+    .bg-slate-800, 
+    .bg-pro-green-dim {
+        background-color: #f8fafc;
+        border-color: #e2e8f0;
+    }
+    .text-slate-100,
+    .text-slate-800,
+    .text-slate-900 {
+        color: #0f172a;
+    }
+}
