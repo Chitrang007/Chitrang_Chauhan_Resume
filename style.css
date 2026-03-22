@@ -108,6 +108,7 @@ a {
         print-color-adjust: exact !important;
         color: #000000 !important;
         text-shadow: none !important;
+        border: none !important;
     }
 
     .no-print, footer, button {
@@ -122,11 +123,29 @@ a {
         padding: 0 !important;
     }
 
+    .print-url::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        font-weight: 500 !important;
+        margin-top: 2px;
+        color: #444;
+    }
+    
+    header h1 {
+        font-size: 20pt !important;
+        margin: 0 !important;
+    }
+
+    header p {
+        margin: 0 !important;
+        line-height: 1.2 !important;
+    }
+
     .resume-container {
         background: white !important;
         box-shadow: none !important;
         margin: 0 !important;
-        padding: 10mm 15mm !important; 
+        padding: 8mm 12mm !important; 
         width: 100% !important;
         border: none !important;
     }
@@ -210,4 +229,15 @@ a {
 
     section { page-break-inside: auto !important; }
     .mb-12, .bg-slate-800 { page-break-inside: avoid !important; }
+
+    html, body {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .bg-white,
+    .bg-slate-800 {
+        padding: 0 !important;
+        margin-top: 6pt !important;
+    }
 }
