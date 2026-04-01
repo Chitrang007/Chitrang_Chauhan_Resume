@@ -221,8 +221,21 @@ a {
         font-weight: 400 !important; 
     }
 
-    .list-disc { padding-left: 1.2rem !important; margin-top: 2pt !important; }
-    .list-disc li { margin-bottom: 2pt !important; }
+    .list-disc {
+        padding-left: 1.2rem !important;
+        margin-top: 2pt !important;
+    }
+
+    .list-disc li {
+        margin-bottom: 2pt !important;
+        color: #000 !important;
+        list-style-type: disc !important;
+        list-style-position: outside !important;
+    }
+
+    .list-disc li::marker {
+        color: #000 !important;
+    }
 
     .p-10 { padding: 0 !important; }
     .space-y-12 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem !important; }
