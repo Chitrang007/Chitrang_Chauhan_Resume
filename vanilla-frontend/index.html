@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="document-title">Loading... | Full Stack Developer</title>
+        <meta name="description" content="Chitrang Chauhan - Full Stack Developer skilled in Angular, React, Go, Node.js, REST APIs, Microservices, and scalable system design.">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class'
+            }
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="antialiased bg-white dark:bg-slate-900 text-black dark:text-white transition-colors duration-300">
+        <div class="max-w-5xl mx-auto my-8 overflow-hidden rounded-lg resume-container bg-gray-100 dark:bg-slate-900">
+            <header class="p-10 rounded-t-lg bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+                <div class="flex justify-between items-start">
+                    <div class="space-y-3">
+                        <h1 id="personal-name" class="text-4xl md:text-5xl font-extrabold tracking-tight uppercase">
+                            </h1>
+                        <p id="personal-title" class="text-lg md:text-xl text-blue-400 font-semibold tracking-wide uppercase">
+                            </p>
+                        <div class="text-sm text-gray-300 space-y-1 mt-3">
+                            <p id="personal-location"></p>
+                            <p>
+                                <strong>Email:</strong>
+                                <a id="personal-email" href="#" class="text-blue-400 hover:underline">
+                                    </a>
+                            </p>
+                            <p><strong id="personal-phone"></strong></p>
+                            <div class="flex gap-2 items-center text-sm mt-2">
+                                <a id="personal-linkedin" href="#" target="_blank" class="font-semibold hover:underline print-url">LinkedIn</a>
+                                <span class="mx-1 text-slate-700">|</span>
+                                <a id="personal-github" href="#" target="_blank" class="font-semibold hover:underline print-url">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                    <button onclick="toggleTheme()" 
+                        class="px-3 py-2 bg-white/20 hover:bg-white/30 rounded-lg backdrop-blur transition">
+                            <span id="themeIcon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+            <div class="p-10 space-y-12">
+                <section>
+                    <h2 class="text-2xl font-bold uppercase tracking-widest text-sm section-title pb-2 mb-4">Summary</h2>
+                    <p id="summary-text" class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                        Loading summary...
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold uppercase tracking-widest text-sm section-title pb-2 mb-6">Technical Skills</h2>
+                    <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold uppercase tracking-widest text-sm section-title pb-2 mb-8">Work Experience</h2>
+                    <div id="experience-container">
+                        </div>
+                </section>
+
+                <section class="page-break">
+                    <h2 class="text-2xl font-bold uppercase tracking-widest text-sm section-title pb-2 mb-6">Projects</h2>
+                    <div id="projects-container" class="space-y-8">
+                        </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold uppercase tracking-widest text-sm section-title pb-2 mb-6">Education</h2>
+                    <div id="education-container">
+                        </div>
+                </section>
+            </div>
+
+            <footer class="bg-gray-200 dark:bg-slate-900 text-black dark:text-white p-8 text-center no-print">
+                <button onclick="window.print()" class="text-black dark:text-white px-10 py-3 rounded-md font-bold uppercase tracking-widest text-sm">
+                    Print / Download PDF
+                </button>
+            </footer>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

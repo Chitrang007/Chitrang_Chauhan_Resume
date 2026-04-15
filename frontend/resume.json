@@ -1,0 +1,100 @@
+{
+  "personal": {
+    "name": "Chitrang Chauhan",
+    "title": "Full Stack Developer | Software Engineer",
+    "location": "Delhi NCR, PAN-India",
+    "email": "chauhanchitrang2001@gmail.com",
+    "phone": "+91-8375066510",
+    "linkedin": "https://linkedin.com/in/chitrang-chauhan",
+    "github": "https://github.com/Chitrang007"
+  },
+  "summary": "Software Engineer with 2+ years of experience at Accenture, specializing in building scalable and high-performance web applications. Strong expertise in Angular and modern JavaScript (ES6+), with hands-on experience in React. Experienced in developing complex user flows, debugging production issues, and improving system reliability for enterprise e-commerce platforms. Proven track record of increasing unit test coverage from 5% to 90% and delivering high-impact fixes across checkout, payment, and shopping workflows.",
+  "skills": {
+    "Languages": "Go, TypeScript, JavaScript, Java, Python, SQL",
+    "Frontend": "React, Angular, Tailwind CSS, React Native",
+    "Backend": "Node.js, Express.js, REST APIs, Microservices, API Security",
+    "Databases": "MongoDB, PostgreSQL",
+    "Tools": "Git, Kibana, Dynatrace, Chrome DevTools",
+    "CI/CD & Cloud": "Vercel, Render, CI/CD Pipelines",
+    "Testing": "Jasmine, Karma, JUnit, Unit Testing"
+  },
+  "experience": [
+    {
+      "id": "e1",
+      "company": "Accenture",
+      "role": "Associate Software Engineer",
+      "startDate": "2023-10",
+      "endDate": "",
+      "current": true,
+      "bullets": [
+        "Contributed to migration of legacy payment system from JSP to Angular, implementing credit card flow using reactive forms and centralized validation logic.",
+        "Developed \"Save for Later\" feature in shopping cart by integrating UI, APIs, and state management using RxJS (BehaviorSubject), improving user experience.",
+        "Resolved long-standing production issue in navigation by designing a custom Angular component for \"My Account\" dropdown, improving usability and meeting client requirements.",
+        "Debugged and fixed cross-page data inconsistencies (store pickup, checkout, account pages) by correcting API-UI mapping and ensuring consistent data binding.",
+        "Identified and resolved complex checkout edge cases involving shipping address inconsistencies by implementing UI-level validation based on API response patterns.",
+        "Refactored product image rendering logic by centralizing conditional handling into a reusable utility service, ensuring consistency across multiple components and devices.",
+        "Improved unit test coverage from 5% to 90% by writing comprehensive Jasmine test cases, enhancing code reliability and reducing regression issues.",
+        "Reduced incident resolution time by 25% through efficient debugging and root cause analysis.",
+        "Maintained high system reliability by monitoring applications using Kibana and Dynatrace during peak traffic (10K-30K users/hour)."
+      ]
+    },
+    {
+      "id": "e2",
+      "company": "Jiffi",
+      "role": "Software Development Intern",
+      "startDate": "2022-01",
+      "endDate": "2022-03",
+      "current": false,
+      "bullets": [
+        "Designed chatbot workflows using Dialogflow integrated with Google Maps APIs.",
+        "Improved user retention through mobile-first UI optimization and push notification systems."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "CMDB: Cinematic Movie Discovery Bureau",
+      "tech": "React, Go, REST APIs, Reverse Proxy",
+      "live": "https://cmdb-engine.vercel.app/",
+      "code": "https://github.com/Chitrang007/Movie-Finder",
+      "bullets": [
+        "Engineered a dual-stage API orchestration system integrating multiple external APIs using IMDb IDs for enriched movie metadata.",
+        "Built a Go-based reverse proxy to handle request routing, bypass API restrictions, and improve response reliability.",
+        "Designed scalable REST API interactions with optimized data fetching and caching strategies.",
+        "Implemented advanced frontend state management using React for handling multi-source data streams.",
+        "Improved application performance and reduced API latency through efficient request handling and architecture design."
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "Slices Pizza",
+      "tech": "React, Go, PostgreSQL",
+      "live": "https://slices-pizza-frontend.onrender.com/",
+      "code": "https://github.com/Chitrang007/slices-pizza",
+      "bullets": [
+        "Developed full-stack e-commerce platform using React and Go with PostgreSQL.",
+        "Designed RESTful APIs with service-oriented architecture for scalable order processing.",
+        "Implemented secure data handling and efficient state management across application modules."
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "Speech Evaluation System",
+      "tech": "Python, Django",
+      "live": "",
+      "code": "",
+      "bullets": [
+        "Developed backend system for speech analysis using Python and Django.",
+        "Integrated speech-to-text APIs improving evaluation accuracy by 15%.",
+        "Built secure architecture for handling audio processing and analytics."
+      ]
+    }
+  ],
+  "education": {
+    "degree": "B.Tech in Information Technology",
+    "university": "Dr. APJ Abdul Kalam Technical University",
+    "year": "2023",
+    "cgpa": "8.1"
+  }
+}
