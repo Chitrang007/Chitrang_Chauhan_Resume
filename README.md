@@ -1,27 +1,31 @@
-# Chitrang Chauhan | Full Stack Developer & Software Engineer
+# Chitrang Chauhan | Full-Stack Portfolio CMS
 
-A premium, high-performance professional resume and portfolio built with **HTML5**, **Tailwind CSS**, and **Custom CSS3**. Engineered for high-velocity software engineering roles with a focus on **AI-augmented development** and **enterprise-grade system reliability**.
-
----
-
-## 🚀 Professional Summary
-
-**High-performance Full Stack Developer** with 2+ years of experience at **Accenture**, specializing in building scalable enterprise applications with **Angular, React, and Go**. Expert at leveraging **AI-augmented workflows (Claude, Cursor, GPT-4o)** to increase development velocity by 30%. Proven track record of transforming system reliability, highlighted by **scaling unit test coverage from 5% to 90%** for global e-commerce platforms.
+A premium, high-performance professional resume and CMS platform. Originally engineered as a static site, it has evolved into a **Full-Stack Enterprise Architecture** featuring a **React (Vite)** frontend, a **Go (Golang)** backend engine, and a **MongoDB Atlas** database.
 
 ---
 
-## 🛠 Tech Stack & AI Orchestration
+## 🚀 Latest Evolution: Static to Dynamic
+The project has been upgraded from a vanilla HTML/CSS file to a **Headless CMS architecture**. 
+* **Dynamic Content**: Resume data is now fetched from a Go API instead of being hardcoded.
+* **Admin Dashboard**: A secure `/admin` route allows for real-time updates to work history and projects without touching code.
+* **Secure Authentication**: Implemented a protected login flow with JWT-style token persistence and a custom "Show Password" toggle for the UI.
 
-### **Core Engineering**
-* **Languages**: Go (Golang), TypeScript, JavaScript (ES6+), Java, Python
-* **Frontend**: React, Angular (v12+), React Native, Tailwind CSS, Framer Motion
-* **Backend**: Node.js, Express.js, Reverse Proxies, API Security, Hybrid Routing
-* **Quality**: Jasmine, Karma, JUnit, Chrome DevTools, SonarQube
+---
 
-### **AI-Augmented Workflow**
-* **Planning & Architecture**: Claude 3.5/4.x (System Design & Prompt Engineering)
-* **Scaffolding & UI**: Cursor AI (Rapid Skeleton & Page Scaffolding)
-* **Implementation & Logic**: GitHub Copilot, Gemini Pro, GPT-4o
+## 🛠 Tech Stack & Cloud Infrastructure
+
+### **The "Engine" (Backend)**
+* **Language**: Go (Golang)
+* **API Architecture**: RESTful API with net/http and Hybrid Routing.
+* **Database**: MongoDB Atlas (NoSQL) for flexible resume schema management.
+* **Security**: Middleware-based Authorization (Bearer Tokens) and CORS orchestration for cross-domain safety.
+* **Hosting**: **Render** (Web Service).
+
+### **The "Interface" (Frontend)**
+* **Library**: React 18 (Vite)
+* **Routing**: React Router 6 with Protected & Public-Only route guards.
+* **Styling**: Tailwind CSS & Custom CSS3 Media Queries.
+* **Hosting**: **Vercel** (Edge Network).
 
 ---
 
@@ -33,50 +37,48 @@ A premium, high-performance professional resume and portfolio built with **HTML5
 
 ---
 
-## 🏗 Featured Projects
+## 🏗 Key Features
 
-### **CMDB PRO: Full-Stack Movie Engine**
-* **Dual-Stage API Integration**: Developed a specialized OMDb integration workflow that first retrieves unique IMDb IDs, followed by a secondary deep-fetch to extract high-fidelity metadata (IMDb ratings, actor credits, plot summaries).
-* **Hybrid Architecture**: Built a custom **Go-based Reverse Proxy** integrated with Vercel Serverless Functions to bypass ISP restrictions and ensure 100% API availability.
-* **AI-First Workflow**: Utilized **Claude** for architectural planning, **Cursor AI** for rapid page scaffolding, and **Copilot/Gemini** for complex implementation logic.
+### **1. Secure Admin CMS**
+The `/admin` dashboard provides a high-fidelity interface to modify the **Accenture experience bullets** and **Project Portfolio**. Changes are saved instantly to MongoDB and reflected on the main site without a redeploy.
 
-### **Pizza Application (MEAN Stack)**
-* Architected a real-time ordering platform using Angular and Node.js with a secure MongoDB backend for inventory management.
+### **2. Print-to-PDF Engine**
+* **Emerald-Slate Dark Theme**: Optimized for developer-centric web viewing.
+* **@media print logic**: Specialized CSS that automatically strips dark backgrounds and UI buttons to generate a clean, professional A4 PDF for physical job applications.
 
-### **Speech Evaluation System (Python/Django)**
-* Integrated speech-to-text APIs and phonetic similarity algorithms to provide objective language assessment metrics.
-
----
-
-## ⚙️ Key Technical Features of this Resume
-
-* **Emerald-Slate Dark Theme**: A premium design optimized for modern developer eyes.
-* **Print-Optimized (@media print)**: Custom CSS logic that converts the dark-mode web view into a clean, professional, white-background PDF for physical printing.
-* **Interactive UX**: Smart hover states (weight-shifting links) and visited-link persistence (purple/underlined) to enhance navigation and accessibility.
-
----
-
-## 📄 Exporting to PDF
-
-This project is specifically engineered for the "Print to PDF" function:
-* Open the `index.html` in any Chromium-based browser (Chrome, Edge, Brave).
-Click the **Print / Download PDF** button at the footer.
-Ensure **Background Graphics** is turned ON in the print settings if you want the emerald accents to appear in the PDF.
+### **3. Reverse Proxy Logic (CMDB Pro)**
+Integrated specialized Go-based proxying to bypass ISP restrictions for high-fidelity movie metadata extraction (OMDb API integration).
 
 ---
 
 ## 🚀 Installation & Local Development
-No build steps are required. Simply clone and open:
-Clone the repository
-git clone <github_repo>
 
-Open in your browser
-(Or use VS Code "Live Server" for instant updates)
+### **Backend Setup**
+1. Navigate to `/backend`.
+2. Create a `.env` file with `MONGO_URI`, `ADMIN_USER`, and `ADMIN_PASS`.
+3. Run `go run main.go`.
+
+### **Frontend Setup**
+1. Navigate to `/frontend`.
+2. Run `npm install`.
+3. Create a `.env` with `VITE_API_URL=http://localhost:8080`.
+4. Run `npm run dev`.
 
 ---
 
 ## 🏗 Project Structure
 
 ```bash
-├── index.html   # Semantic HTML5 structure and resume content
-└── style.css    # Custom theme variables, emerald accents, and print logic
+├── backend/
+│   ├── main.go         # Go API & MongoDB logic
+│   ├── go.mod          # Dependencies
+│   └── .env            # Secrets (Private)
+├── frontend/
+│   ├── src/
+│   │   ├── Admin.jsx   # CMS Dashboard
+│   │   ├── Resume.jsx  # Public Resume View
+│   │   ├── Login.jsx   # Auth View (with Show Password)
+│   │   └── main.jsx    # Router & Entry Point
+│   ├── index.css       # Print logic & Tailwind
+│   └── vercel.json     # SPA Routing config
+└── readme.md
