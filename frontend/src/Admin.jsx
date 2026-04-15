@@ -88,6 +88,11 @@ function Admin() {
     setData({ ...data, experience: updated });
   };
 
+  const logout = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
+
   if (loading) return <div className="p-20 text-emerald-500 font-bold">Loading Editor...</div>;
   if (!data) return <div className="p-20 text-red-500 font-bold">Data fetch failed.</div>;
 
@@ -96,9 +101,18 @@ function Admin() {
       <form onSubmit={handleSubmit} className="max-w-5xl mx-auto space-y-10">
         <div className="flex justify-between items-center border-b border-slate-800 pb-4">
           <h1 className="text-3xl font-black uppercase tracking-tighter">Admin Dashboard</h1>
+          <div className="flex gap-4">
+           <button
+              type="button"
+              onClick={logout}
+              className="text-slate-400 font-bold px-4"
+           >
+              Logout
+          </button>
           <button type="submit" disabled={saving} className="bg-emerald-600 px-10 py-2 rounded-lg font-bold hover:bg-emerald-500 transition-all">
             {saving ? 'Saving...' : 'Save All Changes'}
           </button>
+          </div>
         </div>
 
         <section className="space-y-4">
