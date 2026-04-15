@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen {
+    .resume-container {
+        transition: background-color 0.3s, color 0.3s;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 8mm 10mm !important; 
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color: #000000 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .no-print, footer, button, .theme-toggle {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 8.5pt !important; 
+        line-height: 1.1 !important; 
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .resume-container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    header {
+        border-bottom: 1.5pt solid #000 !important;
+        margin-bottom: 6pt !important;
+        padding: 0 0 4pt 0 !important;
+    }
+
+    header h1 {
+        font-size: 18pt !important;
+        font-weight: 800 !important;
+        margin: 0 !important;
+        text-transform: uppercase !important;
+        letter-spacing: -0.5pt !important;
+    }
+
+    header .title {
+        font-size: 10pt !important;
+        font-weight: 700 !important;
+    }
+
+    .contact-info {
+        font-size: 8pt !important;
+        margin-top: 2pt !important;
+    }
+
+    h2.section-title {
+        font-size: 10pt !important;
+        border-bottom: 1pt solid #000 !important;
+        margin-top: 8pt !important; 
+        margin-bottom: 3pt !important; 
+        padding-bottom: 1pt !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+    }
+
+    .exp-row, .project-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: baseline !important;
+        font-weight: 700 !important;
+        margin-top: 4pt !important;
+        margin-bottom: 1pt !important;
+    }
+
+    .list-disc {
+        padding-left: 12pt !important;
+        margin-top: 1pt !important;
+    }
+
+    .list-disc li {
+        margin-bottom: 1pt !important; 
+        list-style-type: disc !important;
+    }
+
+    .grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2pt 10pt !important;
+    }
+
+    section { 
+        page-break-inside: auto !important; 
+    }
+    
+    .print-avoid { 
+        page-break-inside: avoid !important; 
+    }
+}
