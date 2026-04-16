@@ -6,19 +6,20 @@ function Admin() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const navigate = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080"
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/resume')
+    fetch(`${API_URL}/api/resume`)
       .then(res => res.json())
       .then(d => { setData(d); setLoading(false); })
       .catch(() => setLoading(false));
-  }, []);
+  }, [API_URL]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSaving(true);
     try {
-      const res = await fetch('http://localhost:8080/api/resume', {
+      const res = await fetch(`${API_URL}/api/resume`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)

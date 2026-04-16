@@ -7,9 +7,10 @@ function Resume() {
   const [isDark, setIsDark] = useState(
     () => localStorage.getItem("theme") !== "light",
   );
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080"
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/resume")
+    fetch(`${API_URL}/api/resume`)
       .then((res) => res.json())
       .then((data) => {
         setResumeData(data);
@@ -19,7 +20,7 @@ function Resume() {
         setError(err.message);
         setLoading(false);
       });
-  }, []);
+  }, [API_URL]);
 
   useEffect(() => {
     const html = document.documentElement;
